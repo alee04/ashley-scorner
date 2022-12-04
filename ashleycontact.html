@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html >
+<head> 
+  <title>Ashley's Corner</title>
+<style type="text/css"></style>
+<link href="base.css" type="text/css" rel="stylesheet"/>
+<link href="style1.css" type="text/css" rel="stylesheet"/>
+<link href="layout_style.css" type="text/css" rel="stylesheet"/>
+  <link href="style_table_form.css" type="text/css" rel="stylesheet"/>
+  <link href="navicon.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Contact Ashley</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+
+<body>
+  <div id="layout">
+  <header>
+ <h1>Ashley's Corner</h1>
+ <h4>My thoughts and opinions on movies, tv shows, and books nobody asked for</h4>
+ <!--Company name and tagline-->
+ </header>
+<nav>
+       <!-- links for menu go here -->
+   <a id="movie" href="#"><img src="Movie.jpg" width="100px" /></a>
+  <ul>
+   <li><a href="ashleyindex.html">Home</a></li>
+   <li><a href="ashleyabout.html">About</a></li>
+   <li><a href="ashleycontact.html">Contact</a></li>
+   <li><a href="ashleymovierecs.html">Events</a></li>
+  </ul>
+ </nav>
+<section><h2>Contact Me </h2></section>
+   <main>
+   <p>* indicates a required field</p>
+   <form action = "mailto:ashley.lee@ucdenver.edu" method = "get" name="contactForm" id="contactForm"></form>
+
+   <fieldset id="contactFields">
+
+   <legend>Contact Information</legend>
+
+   <div class="formRow">
+     <label for="name">Name<span>*</span></label>
+     <input type="text" name="name" id="name" placeholder="First and Last name" required/>
+    </div>
+    
+   <div class="formRow">
+     <label for="email">Email Address<span>*</span></label>
+     <input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+   </div>
+
+   <div class="formRow">
+     <label for="phone">Phone</label>
+     <input type="tel" name="phone" placeholder="Enter your phone number" id="phone"/>
+   </div>
+   </fieldset>
+
+ <fieldset id="request">
+   
+   <legend>Information Request</legend>
+
+   <div class="formRow">
+
+     <label for="topic">Request Topic<span>*</span></label>
+     <select name="topic" id="topic" required>
+       <option value=" ">Select a Topic</option>
+       <option value="Website">Information Regarding Website</option>
+       <option value="Movie Recommendations">Movie Recommendations</option>
+       <option value ="What I do">What I Do</option>
+       </select>
+   </div>
+
+   <div class="formRow">
+     <label for="subject">Subject<span>*</span></label>
+     <input name="subject" id="subject" required>
+   </div>
+
+   <label for="question" class="blockLabel">Ask us your Question<span>*</span></label>
+
+   <textarea id="question" name="question" rows="5" cols="55"></textarea>
+
+ </fieldset>
+
+ <fieldset id="mailingList">
+   <legend>Do you want to be on my mailing list?</legend>
+   <label for="Yes">Yes</label>
+   <input type="radio" id="mYes" name="List" value="Yes"/>
+   <label for="No">No</label>
+   <input type="radio" id="mNo" name="List" value="No"/>
+ </fieldset>
+
+ <input type="submit" value="Submit Question" id="submit"/>
+ 
+
+</form>
+
+
+   </main>
+   <footer>	  
+      <!-- Footer information should include your name and a copyright statement.-->
+  <p>Copyright 2022 by Ashley Lee</p>
+ 
+   </footer>
+ </div>
+</body>
+</html>
